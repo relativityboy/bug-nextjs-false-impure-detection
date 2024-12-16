@@ -1,0 +1,9 @@
+.Container {
+    background:orange;
+    color: green;
+
+    /*this triggers the bug - css should compile to something like `.Container > a:hover` */
+    a:hover {
+        color: red;
+    }
+}
